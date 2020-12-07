@@ -115,6 +115,7 @@
         <p class="description">
           {{ item.description }}
         </p>
+        <p class="aside" v-if="item.aside" v-html="item.aside"></p>
       </div>
     </section>
   </div>
