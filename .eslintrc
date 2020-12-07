@@ -10,7 +10,11 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["plugin:prettier/recommended", "plugin:vue/vue3-essential"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:tailwind/recommended"
+  ],
   "rules": {
     "prettier/prettier": ["error"]
   }
