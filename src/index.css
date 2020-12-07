@@ -13,3 +13,89 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a {
+  @apply underline;
+  color: #0c93e4;
+}
+
+.block,
+.details {
+  page-break-inside: avoid;
+}
+
+section {
+  @apply mb-10;
+}
+
+header {
+  @apply mb-10;
+}
+header h1 {
+  @apply border-b border-gray-400 pb-3 mb-5;
+}
+header h1 .title {
+  @apply float-right text-4xl text-gray-400 font-bold;
+}
+header h1 .name {
+  @apply text-4xl font-bold;
+}
+header h1 .profession {
+  @apply font-bold;
+}
+header blockquote {
+  @apply text-gray-500;
+}
+
+section h2 {
+  @apply text-2xl font-bold border-b border-gray-400 pb-2 mb-10;
+}
+section h3 {
+  @apply text-xl font-bold;
+}
+
+.tags span {
+  @apply inline-block px-2 mr-1 mt-2 rounded-sm bg-gray-200;
+}
+
+.quickfacts p {
+  @apply mb-5;
+}
+.quickfacts p img {
+  @apply float-left mr-2;
+}
+
+.details {
+  @apply block mb-10 clear-both;
+}
+.details h3 small {
+  @apply text-gray-300 ml-3;
+}
+.details img {
+  @apply float-right;
+  width: 90px;
+}
+.details .description {
+  @apply mt-5;
+}
+
+.experience ul {
+  @apply list-disc list-inside ml-5 mb-10;
+}
+
+.education .details .description {
+  @apply mt-0;
+}
+
+.openSource .details .description {
+  @apply mt-2;
+}
+
+@media print {
+  @page {
+    margin: 2.5cm;
+  }
+  .details img {
+    width: 3cm;
+  }
+}
