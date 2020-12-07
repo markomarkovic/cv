@@ -6,3 +6,6 @@
 
 # Node
 node_modules/
+
+# Vue
+dist/
