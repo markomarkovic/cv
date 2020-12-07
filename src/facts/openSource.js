@@ -4,7 +4,9 @@ export default [
     link: 'https://github.com/markomarkovic/cv',
     technologies: ['vue', 'vite', 'tailwind css', 'github pages', 'puppeteer'],
     description: `Latest iteration of this CV, now built with Vue and Tailwind CSS, published to GitHub Pages, and generating a PDF version using Puppeteer.`,
-    aside: '<a href="/Marko Markovic - CV - EN.pdf">Download PDF</a>',
+    aside: `<a href="${
+      import.meta.env.BASE_URL
+    }/Marko Markovic - CV - EN.pdf">Download PDF</a>`,
   },
   {
     title: 'simple-php-git-deploy',

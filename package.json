@@ -35,6 +35,7 @@
     "build": "yarn build:html && yarn build:pdf",
     "build:html": "vite build",
     "build:pdf": "concurrently -k -s first 'http-server dist' 'sleep 5 && node src/generatePDF'",
+    "build:gh-pages": "vite build --base=/cv/",
     "lint": "eslint --fix src/**/*.{js,vue}"
   },
   "husky": {

@@ -2,13 +2,13 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,3 +30,21 @@ jobs:
         run: |
           yarn install
           yarn run build
+          yarn run build:gh-pages
+
+      - name: Deploy to gh-pages
+        run: |
+          git config --global user.name ${GITHUB_ACTOR}
+          git config --global user.email ${GITHUB_ACTOR}@markomarkovic.github.io
+          git remote add gh-pages https://github.com/markomarkovic/cv.git -t gh-pages
+          git fetch gh-pages
+          git checkout gh-pages
+          git pull --rebase
+          rm -rf _assets assets img .github
+          mv dist/* .
+          rm -rf dist
+          mv _assets assets
+          find . -type f -exec sed -i 's@/_assets/@/assets/@g' {} \;
+          git add .
+          git commit -m "Automatic build `date`"
+          git push
