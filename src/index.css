@@ -14,6 +14,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  @apply px-5;
+  max-width: 800px;
+}
+
 a {
   @apply underline;
   color: #0c93e4;
@@ -32,16 +37,16 @@ header {
   @apply mb-10;
 }
 header h1 {
-  @apply border-b border-gray-400 pb-3 mb-5;
+  @apply border-b border-gray-400 pb-3 mb-5 flex flex-wrap-reverse justify-between;
 }
 header h1 .title {
-  @apply float-right text-4xl text-gray-400 font-bold;
+  @apply text-4xl text-gray-400 font-bold order-last;
 }
 header h1 .name {
   @apply text-4xl font-bold;
 }
 header h1 .profession {
-  @apply font-bold;
+  @apply text-base font-bold flex-initial break-all;
 }
 header blockquote {
   @apply text-gray-500;
@@ -59,10 +64,13 @@ section h3 {
 }
 
 .quickfacts p {
-  @apply mb-5;
+  @apply mb-5 flex;
 }
 .quickfacts p img {
-  @apply float-left mr-2;
+  @apply mr-3 flex-initial;
+}
+.quickfacts p span {
+  @apply flex-initial;
 }
 
 .details {
@@ -72,7 +80,7 @@ section h3 {
   @apply text-gray-300 ml-3;
 }
 .details img {
-  @apply float-right;
+  @apply float-right mt-3 ml-5 mb-5;
   width: 90px;
 }
 .details .description {
@@ -94,6 +102,9 @@ section h3 {
 @media print {
   @page {
     margin: 2.5cm;
+  }
+  .container {
+    padding: 0 !important;
   }
   .details img {
     width: 3cm;

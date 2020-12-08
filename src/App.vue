@@ -1,10 +1,12 @@
 <template>
-  <div class="container mx-auto mt-20" style="width: 800px">
+  <div class="container mx-auto mt-20">
     <header>
       <h1>
         <p class="title">{{ facts.basicFacts.title }}</p>
-        <p class="name">{{ facts.basicFacts.name }}</p>
-        <p class="profession">{{ facts.basicFacts.profession }}</p>
+        <div class="name">
+          {{ facts.basicFacts.name }}
+          <p class="profession">{{ facts.basicFacts.profession }}</p>
+        </div>
       </h1>
 
       <blockquote>
@@ -38,11 +40,11 @@
         v-for="(item, i) in facts.experience.details"
         v-bind:key="i"
       >
+        <img v-bind:src="item.logo" />
         <h3>
           {{ item.title }} &mdash; {{ item.employer }}
           <small>{{ item.location }}</small>
         </h3>
-        <img v-bind:src="item.logo" />
         <p class="date">
           <span class="from">{{ item.startDate }}</span> ⇨
           <span class="to">{{ item.endDate }}</span>
@@ -81,10 +83,10 @@
       <h2>Notable Projects</h2>
 
       <div class="details" v-for="(item, i) in facts.projects" v-bind:key="i">
+        <img v-bind:src="item.logo" />
         <h3>
           <a v-bind:href="item.link">{{ item.title }}</a>
         </h3>
-        <img v-bind:src="item.logo" />
         <p class="date">
           <span class="from">{{ item.startDate }}</span> ⇨
           <span class="to">{{ item.endDate }}</span>
