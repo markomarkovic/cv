@@ -32,6 +32,7 @@ jobs:
           yarn run build
           mv dist/*.pdf .
           yarn run build:gh-pages
+          mv *.pdf dist/
 
       - name: Deploy to gh-pages
         run: |
