@@ -60,7 +60,7 @@ section h3 {
 }
 
 .tags span {
-  @apply inline-block px-2 mr-1 mt-2 rounded-sm bg-gray-200;
+  @apply inline-block px-2 mr-1 mt-2 rounded-sm bg-gray-200 text-sm;
 }
 
 .quickfacts p {
