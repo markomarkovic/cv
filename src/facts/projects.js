@@ -22,7 +22,8 @@ export default [
   },
   {
     title: 'WAVE Industry Media',
-    link: import.meta.env.BASE_URL + 'img/screenshots/wave.png',
+    link:
+      'https://raw.githubusercontent.com/markomarkovic/cv/main/src/public/img/screenshots/wave.png',
     logo: import.meta.env.BASE_URL + 'img/logos/wave.jpeg',
     startDate: '2012',
     endDate: '2013',
