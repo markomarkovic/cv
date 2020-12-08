@@ -9,6 +9,13 @@ export default [
     }/Marko Markovic - CV - EN.pdf">Download PDF</a>`,
   },
   {
+    title: 'sao-js-skeleton',
+    link: 'https://github.com/markomarkovic/sao-js-skeleton',
+    technologies: ['javascript', 'sao', 'template', 'skeleton'],
+    description:
+      'A tiny JavaScript project skeleton that I use for personal projects.',
+  },
+  {
     title: 'simple-php-git-deploy',
     link: 'https://github.com/markomarkovic/simple-php-git-deploy',
     technologies: ['php', 'git'],
