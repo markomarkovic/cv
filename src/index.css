@@ -3,8 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body,
-html {
+html,
+body {
   color: rgba(0, 0, 0, 0.9);
   font-size: 16px;
   font-family: Lato, sans-serif;
@@ -15,7 +15,7 @@ html {
 }
 
 .container {
-  @apply px-5;
+  @apply px-5 mx-auto mt-20;
   max-width: 800px;
 }
 
@@ -80,7 +80,7 @@ section h3 {
   @apply text-gray-300 ml-3;
 }
 .details img {
-  @apply float-right mt-3 ml-5 mb-5;
+  @apply float-right mt-3 ml-2 mb-2;
   width: 90px;
 }
 .details .description {
@@ -103,8 +103,14 @@ section h3 {
   @page {
     margin: 2.5cm;
   }
+  html,
+  body {
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+  }
   .container {
     padding: 0 !important;
+    margin-top: 0 !important;
   }
   .details img {
     width: 3cm;

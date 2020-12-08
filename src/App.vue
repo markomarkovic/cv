@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mt-20">
+  <div class="container">
     <header>
       <h1>
         <p class="title">{{ facts.basicFacts.title }}</p>
