@@ -53,7 +53,7 @@ header blockquote {
 }
 
 section h2 {
-  @apply text-2xl font-bold border-b border-gray-400 pb-2 mb-10;
+  @apply text-2xl font-bold border-b border-gray-400 pb-2 mb-10 print:mb-8;
 }
 section h3 {
   @apply text-xl font-bold;
