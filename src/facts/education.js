@@ -2,7 +2,7 @@ export default [
   {
     title: 'Computer Science',
     institution: 'Računarski fakultet',
-    location: 'Belgrade',
+    location: 'Belgrade, Serbia',
     startDate: '2003',
     endDate: '2007',
     description: 'Started working and never completed several remaining exams.',

@@ -1,12 +1,12 @@
 export default {
   points: [
-    'More than 15 years of experience in web development and related fields.',
+    'More than 15 years of professional experience in web development and related fields.',
     'Solid JavaScript knowledge, both back-end (preferred) and front-end.',
     'Relational, NoSQL, and Document based database experience.',
     'Used plain-old-http, REST, WebSockets, and GraphQL to communicate with many diverse APIs.',
     'Have no problem learning new languages, libraries, frameworks, etc.',
     'Developed on-line, off-line, real-time, specialized, generalized, and mixed applications.',
-    'Wrote code to generate PDFs, images, graphs, thumbnails, and code.',
+    'Wrote code to generate web sites, PDFs, images, graphs, and code.',
     'Works primarily in Linux.',
   ],
   details: [
@@ -30,7 +30,7 @@ export default {
         'agile',
       ],
       description:
-        'Leading a multi-cultural team of several developers and QAs, utilizing agile techniques and modern development practices, tools, and infrastructure to, in cooperation with other teams, deliver services linking government entities and end-users (TAMM Project).',
+        'Leading a multi-cultural team of several developers and QAs, utilizing agile techniques and modern development practices, tools, and infrastructure to, in cooperation with other teams, deliver services linking government entities and end-users (TAMM Project, see below).',
     },
     {
       title: 'Developer',
@@ -60,7 +60,7 @@ export default {
       endDate: 'Mar 2016',
       technologies: ['node.js', 'mongodb', 'express', 'angularjs', 'git'],
       description:
-        'Keeping the existing app working, optimizing existing processes (including rewrites), implementing new functionality, and general server maintenance.',
+        'Maintenance and improvements of the existing app, optimizing existing processes (including rewrites), implementing new functionality, and general server maintenance.',
     },
     {
       title: 'External developer',
@@ -70,7 +70,8 @@ export default {
       startDate: 'May 2014',
       endDate: 'Jun 2015',
       technologies: ['php', 'html', 'css', 'javascript', 'mysql', 'cms', 'git'],
-      description: 'Development of several websites and CMSs for the agency.',
+      description:
+        'Development of several websites and custom CMSs for the agency.',
     },
     {
       title: 'Primary developer',
@@ -81,7 +82,7 @@ export default {
       endDate: 'Nov 2014',
       technologies: ['php', 'cordova', 'mysql', 'phonegap-build', 'git'],
       description:
-        'Complete development of a CMS for mobile apps. The user could create a (simple) app online, fill it with content and compile it for publish in the stores. After publishing, app could be updated almost in realtime, without need for republishing.',
+        'Complete development of a CMS for mobile apps. The user could create an app online, fill it with content and compile it for publish in the stores without leaving the browser. After publishing, app could be updated almost in realtime, without the need for republishing in the store.',
     },
     {
       title: 'Lead Developer',
@@ -101,7 +102,7 @@ export default {
         'git',
       ],
       description:
-        'Many different projects (mostly websites with CMS, but also a few mobile apps), complete development.',
+        'Complete development of various projects (mostly websites with a custom CMS, but also a few mobile apps, CRM system, and bespoke business web applications).',
     },
     {
       title: 'Senior Software Developer',
