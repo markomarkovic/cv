@@ -19,6 +19,6 @@ export default [
   },
   {
     icon: import.meta.env.BASE_URL + 'img/icons/phone.svg',
-    text: 'Sometimes uses the phone: <b>+381 62 200 51</b>',
+    text: 'Sometimes uses the phone: <b>+381 62 200 512</b>',
   },
 ]
