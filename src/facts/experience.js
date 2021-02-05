@@ -16,7 +16,7 @@ export default {
       location: 'Abu Dhabi, United Arab Emirates',
       logo: `${import.meta.env.BASE_URL}img/logos/appsintegra.png`,
       startDate: 'Nov 2018',
-      endDate: 'Present',
+      endDate: 'Jan 2021',
       technologies: [
         'node.js',
         'typescript',
