@@ -1,4 +1,13 @@
-module.exports = {
+import vue from '@vitejs/plugin-vue'
+
+/**
+ * https://vitejs.dev/config/
+ * @type {import('vite').UserConfig}
+ */
+export default {
+  plugins: [vue()],
   root: 'src',
-  outDir: '../dist',
+  build: {
+    outDir: '../dist',
+  },
 }
