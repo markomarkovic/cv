@@ -136,14 +136,38 @@ export default {
       document.title = pageTitle
     })
 
-    const howLong = (from, to) => {
-      const fromDate = new Date(from)
-      fromDate.setDate(1)
-      let toDate = new Date()
-      if (to !== 'Present') {
-        toDate = new Date(to)
-        toDate.setDate(30)
+    const dateFromShort = (str) => {
+      if (str === 'Present') {
+        return new Date()
       }
+      const [month, year] = str.split(' ')
+
+      return new Date(
+        year,
+        [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+        ].indexOf(month)
+      )
+    }
+
+    const howLong = (from, to) => {
+      const fromDate = dateFromShort(from)
+      const toDate = dateFromShort(to)
+      fromDate.setDate(1)
+      toDate.setDate(
+        new Date(toDate.getFullYear(), toDate.getMonth() + 1, 0).getDate()
+      )
       const diff = (toDate - fromDate) / 1000 / 60 / 60 / 24 / 30
       const years = Math.floor(diff / 12)
       const months = Math.floor(diff % 12)
