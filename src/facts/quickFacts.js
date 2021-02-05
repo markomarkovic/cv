@@ -1,8 +1,7 @@
 export default [
   {
     icon: `${import.meta.env.BASE_URL}img/icons/placemark.svg`,
-    text:
-      'Currently in <b>Abu Dhabi, United Arab Emirates</b> for work (2 years and counting), with a home base in Belgrade, Serbia.',
+    text: 'Back in Belgrade, Serbia.',
   },
   {
     icon: `${import.meta.env.BASE_URL}img/icons/hourglass.svg`,
