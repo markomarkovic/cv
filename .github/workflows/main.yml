@@ -42,11 +42,9 @@ jobs:
           git fetch gh-pages
           git checkout gh-pages
           git pull --rebase
-          rm -rf _assets assets img .github
+          rm -rf assets img .github
           mv dist/* .
           rm -rf dist
-          mv _assets assets
-          find . -type f -exec sed -i 's@/_assets/@/assets/@g' {} \;
           git add .
           git commit -m "Automatic build `date`"
           git push
