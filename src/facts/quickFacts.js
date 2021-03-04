@@ -1,7 +1,7 @@
 export default [
   {
     icon: `${import.meta.env.BASE_URL}img/icons/placemark.svg`,
-    text: 'Back in Belgrade, Serbia.',
+    text: 'Currently in Belgrade, Serbia.',
   },
   {
     icon: `${import.meta.env.BASE_URL}img/icons/hourglass.svg`,
