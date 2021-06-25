@@ -9,3 +9,7 @@ node_modules/
 
 # Vue
 dist/
+
+# Husky
+/.husky/_
+/.husky/.gitignore
