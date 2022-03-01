@@ -1,7 +1,7 @@
 export default [
   {
     icon: `${import.meta.env.BASE_URL}img/icons/placemark.svg`,
-    text: 'Currently in Belgrade, Serbia.',
+    text: 'Currently in Dubai, UAE.',
   },
   {
     icon: `${import.meta.env.BASE_URL}img/icons/hourglass.svg`,
@@ -17,6 +17,6 @@ export default [
   },
   {
     icon: `${import.meta.env.BASE_URL}img/icons/phone.svg`,
-    text: 'Sometimes uses the phone: <b>+381 62 200 512</b>',
+    text: 'Sometimes uses the phone: <b><abbr title="Serbia">+381</abbr> 62 200 512</b> or <b><abbr title="UAE">+971</abbr> 50 252 6569</b>',
   },
 ]
