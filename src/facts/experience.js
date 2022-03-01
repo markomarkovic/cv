@@ -11,7 +11,7 @@ export default {
   ],
   details: [
     {
-      title: 'Tech Lead',
+      title: 'Tech Lead / Engineering Manager',
       employer: 'appsintegra',
       location: 'Abu Dhabi, United Arab Emirates',
       logo: `${import.meta.env.BASE_URL}img/logos/appsintegra.png`,
