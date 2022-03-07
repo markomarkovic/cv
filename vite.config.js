@@ -1,3 +1,4 @@
+import transformerDirective from '@unocss/transformer-directives'
 import Vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { presetIcons, presetUno } from 'unocss'
@@ -27,6 +28,7 @@ export default defineConfig({
           scale: 1.2,
         }),
       ],
+      transformers: [transformerDirective()],
     }),
   ],
 

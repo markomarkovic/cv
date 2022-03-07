@@ -4,6 +4,7 @@ specifiers:
   '@iconify-json/tabler': 1.1.1
   '@unocss/preset-icons': 0.27.2
   '@unocss/reset': 0.27.2
+  '@unocss/transformer-directives': 0.27.2
   '@vitejs/plugin-vue': 2.2.4
   concurrently: 7.0.0
   eslint: 8.10.0
@@ -27,6 +28,7 @@ devDependencies:
   '@iconify-json/tabler': 1.1.1
   '@unocss/preset-icons': 0.27.2
   '@unocss/reset': 0.27.2
+  '@unocss/transformer-directives': 0.27.2
   '@vitejs/plugin-vue': 2.2.4_vite@2.8.6+vue@3.2.31
   concurrently: 7.0.0
   eslint: 8.10.0
