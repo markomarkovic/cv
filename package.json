@@ -1,8 +1,7 @@
 {
   "name": "cv",
   "description": "Curriculum Vitae",
-  "version": "0.0.1",
-  "main": "src/main.js",
+  "version": "1.0.0",
   "author": "Marko Marković <okram@civokram.com>",
   "license": "MIT",
   "private": true,
@@ -10,44 +9,79 @@
     "node": ">=14.15.1"
   },
   "dependencies": {
-    "vue": "3.1.2"
+    "vue": "3.2.31"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "1.2.3",
-    "@vue/compiler-sfc": "3.1.2",
-    "autoprefixer": "10.2.6",
-    "babel-eslint": "10.1.0",
-    "concurrently": "6.2.0",
-    "eslint": "7.29.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-prettier": "3.4.0",
-    "eslint-plugin-tailwind": "0.2.1",
-    "eslint-plugin-vue": "7.12.1",
-    "http-server": "0.12.3",
-    "husky": "6.0.0",
-    "lint-staged": "11.0.0",
-    "postcss": "8.3.5",
-    "prettier": "2.3.1",
-    "puppeteer": "10.0.0",
-    "tailwindcss": "2.2.4",
-    "vite": "2.3.8"
-  },
-  "resolutions": {
-    "hosted-git-info": ">=3.0.8",
-    "lodash": ">=4.17.21",
-    "postcss": ">=8.2.10"
+    "@iconify-json/tabler": "1.1.1",
+    "@unocss/preset-icons": "0.27.2",
+    "@unocss/reset": "0.27.2",
+    "@unocss/transformer-directives": "0.27.2",
+    "@vitejs/plugin-vue": "2.2.4",
+    "concurrently": "7.0.0",
+    "eslint": "8.10.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-vue": "8.5.0",
+    "http-server": "14.1.0",
+    "lint-staged": "12.3.5",
+    "prettier": "2.5.1",
+    "puppeteer": "13.4.1",
+    "replace-in-files-cli": "2.0.0",
+    "simple-git-hooks": "2.7.0",
+    "unocss": "0.27.2",
+    "vite": "2.8.6"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "yarn build:html && yarn build:pdf",
+    "build": "pnpm run build:html && pnpm run build:timestamp && pnpm run build:pdf",
+    "build:gh-pages": "vite build --base=/cv/",
     "build:html": "vite build",
     "build:pdf": "concurrently -k -s first 'http-server dist' 'sleep 5 && node src/generatePDF'",
-    "build:gh-pages": "vite build --base=/cv/",
-    "lint": "eslint --fix src/**/*.{js,vue}"
+    "build:timestamp": "pnpx replace-in-files --string __LAST_UPDATE__ --replacement `date --iso` dist/assets/index.*.js",
+    "dev": "vite",
+    "lint": "eslint . --ext=.js,.vue --fix",
+    "prepare": "pnpx simple-git-hooks"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "simple-git-hooks": {
+    "pre-commit": "pnpx lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{js,vue}": [
+      "pnpm run lint"
+    ]
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "es2021": true
+    },
+    "plugins": [
+      "prettier",
+      "vue"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": [
+      "plugin:vue/vue3-recommended",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error"
+      ],
+      "vue/no-v-html": "off"
+    },
+    "ignorePatterns": [
+      "**/node_modules",
+      "**/dist"
+    ]
   }
 }
