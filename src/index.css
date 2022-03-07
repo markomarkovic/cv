@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  @apply px-5 mx-auto mt-20;
+  @apply mx-auto mt-20;
   max-width: 800px;
 }
 
@@ -46,7 +46,7 @@ header h1 .profession {
   @apply text-base font-bold flex-initial break-all;
 }
 header blockquote {
-  @apply text-gray-500 print:leading-tight;
+  @apply text-gray-500 print:leading-snug;
 }
 
 section h2 {
@@ -61,7 +61,7 @@ section h3 {
 }
 
 .quickfacts p {
-  @apply mb-5 flex items-center leading-tight;
+  @apply mb-5 flex items-center leading-snug;
 }
 .quickfacts p .icon {
   @apply min-w-5 min-h-5 mr-4;
@@ -102,7 +102,7 @@ section h3 {
 
 @media print {
   @page {
-    margin: 2.5cm;
+    margin: 2.3cm;
   }
   html,
   body {
