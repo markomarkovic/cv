@@ -22,7 +22,7 @@ export default [
   },
   {
     title: 'WAVE Industry Media',
-    link: 'https://raw.githubusercontent.com/markomarkovic/cv/main/src/public/img/screenshots/wave.png',
+    link: 'https://raw.githubusercontent.com/markomarkovic/cv/main/public/img/screenshots/wave.png',
     logo: './img/logos/wave.jpeg',
     startDate: '2012',
     endDate: '2013',
