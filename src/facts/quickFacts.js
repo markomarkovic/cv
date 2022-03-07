@@ -2,7 +2,7 @@
 export default [
   {
     icon: 'i-tabler-map-pin?bg',
-    text: 'Currently in Dubai, UAE.',
+    text: 'Currently in <b>Dubai</b>, United Arab Emirates.',
   },
   {
     icon: 'i-tabler-hourglass?bg',
@@ -14,10 +14,11 @@ export default [
   },
   {
     icon: 'i-tabler-mail?bg',
-    text: 'Prefers async communication: <a href="mailto:okram@civokram.com">okram@civokram.com</a>',
+    text: 'Prefers async communication using primarily <a href="mailto:okram@civokram.com">okram@civokram.com</a>.',
   },
   {
     icon: 'i-tabler-phone?bg',
-    text: 'Sometimes uses the phone: <b><abbr title="Serbia">+381</abbr> 62 200 512</b> or <b><abbr title="UAE">+971</abbr> 50 252 6569</b>',
+    text: 'Can be reached on <b><abbr title="UAE">+971</abbr> 50 252 6569</b> phone number when in UAE or <b><abbr title="Serbia">+381</abbr> 62 200 512</b> when in Serbia.',
+    // text: 'Can be reached on <b><abbr title="Serbia">+381</abbr> 62 200 512</b> phone number when in Serbia, or <b><abbr title="UAE">+971</abbr> 50 252 6569</b> when in UAE.',
   },
 ]

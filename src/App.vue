@@ -71,7 +71,6 @@ const howLong = (from, to) => {
     <section class="quickfacts">
       <div class="block">
         <h2>Quick facts</h2>
-
         <p v-for="(fact, i) in facts.quickFacts" :key="i">
           <span class="icon" :class="fact.icon"></span>
           <span v-html="fact.text"></span>
@@ -81,13 +80,17 @@ const howLong = (from, to) => {
 
     <section class="experience">
       <div class="block">
-        <h2>Experience</h2>
+        <h2>Experience summary</h2>
         <ul>
           <li v-for="(item, i) in facts.experience.points" :key="i">
             {{ item }}
           </li>
         </ul>
       </div>
+    </section>
+
+    <section class="experience">
+      <h2>Experience in more details</h2>
 
       <div
         v-for="(item, i) in facts.experience.details"
@@ -140,8 +143,11 @@ const howLong = (from, to) => {
           <a :href="item.link">{{ item.title }}</a>
         </h3>
         <p class="date">
-          <span class="from">{{ item.startDate }}</span> ⇨
-          <span class="to">{{ item.endDate }}</span>
+          <span class="from">{{ item.startDate }}</span>
+          <span v-if="item.endDate">
+            ⇨
+            <span class="to">{{ item.endDate }}</span>
+          </span>
         </p>
         <p class="tags">
           <span v-for="(tag, j) in item.technologies" :key="j">{{ tag }}</span>

@@ -15,6 +15,12 @@ export default [
     aside: `<a href="./Marko Markovic - CV - EN.pdf">Download PDF</a>`,
   },
   {
+    title: 'time-ago-lite',
+    link: 'https://github.com/markomarkovic/time-ago-lite',
+    technologies: ['typescript', 'library', 'tests'],
+    description: `A liteweight library to generate time ago string from a date. Never got around to actually publish it on NPM.`,
+  },
+  {
     title: 'sao-js-skeleton',
     link: 'https://github.com/markomarkovic/sao-js-skeleton',
     technologies: ['javascript', 'sao', 'template', 'skeleton'],

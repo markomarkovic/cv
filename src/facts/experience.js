@@ -1,13 +1,14 @@
 export default {
   points: [
     'More than 15 years of professional experience in web development and related fields.',
-    'Solid JavaScript knowledge, both back-end (preferred) and front-end.',
+    'Familiar with agile practices and leading cross-functional teams to deliver value.',
+    'Solid JavaScript knowledge, both back-end (strongly preferred) and front-end.',
     'Relational, NoSQL, and Document based database experience.',
-    'Used plain-old-http, REST, WebSockets, and GraphQL to communicate with many diverse APIs.',
-    'Have no problem learning new languages, libraries, frameworks, etc.',
+    'Used plain-old-http, REST, WebSockets, GraphQL, and gRPC to communicate with many diverse APIs.',
+    'Has no problem learning new languages, libraries, frameworks, paradigms, etc.',
     'Developed on-line, off-line, real-time, specialized, generalized, and mixed applications.',
     'Wrote code to generate web sites, PDFs, images, graphs, and code.',
-    'Works primarily in Linux.',
+    'Works primarily in Linux, but can endure other platforms.',
   ],
   details: [
     {
@@ -63,7 +64,7 @@ export default {
         'Maintenance and improvements of the existing app, optimizing existing processes (including rewrites), implementing new functionality, and general server maintenance.',
     },
     {
-      title: 'External developer',
+      title: 'External Developer',
       employer: 'designessentials',
       location: 'remote',
       logo: './img/logos/designessentials.png',
@@ -74,7 +75,7 @@ export default {
         'Development of several websites and custom CMSs for the agency.',
     },
     {
-      title: 'Primary developer',
+      title: 'Primary Developer',
       employer: 'pixelimage',
       location: 'Basel, Switzerland',
       logo: './img/logos/pixelimage.png',
@@ -143,7 +144,7 @@ export default {
       logo: './img/logos/cactimedia.png',
       startDate: 'Sep 2005',
       endDate: 'Feb 2006',
-      technologies: ['php', 'javascript', 'sql', 'cms'],
+      technologies: ['php', 'javascript', 'sql', 'cms', 'pdf'],
       description:
         'Complete development of custom CMS solutions for a diverse list of clients.',
     },

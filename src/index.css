@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html,
 body {
   color: rgba(0, 0, 0, 0.9);
   font-size: 16px;
-  font-family: Lato, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-variant-ligatures: common-ligatures;
   line-height: 1.67;
   -webkit-font-smoothing: antialiased;
@@ -44,11 +46,11 @@ header h1 .profession {
   @apply text-base font-bold flex-initial break-all;
 }
 header blockquote {
-  @apply text-gray-500;
+  @apply text-gray-500 print:leading-tight;
 }
 
 section h2 {
-  @apply text-2xl font-bold border-b border-gray-400 pb-2 mb-10 print:mb-8;
+  @apply text-2xl font-bold border-b border-gray-400 pb-2 mb-10 print:mb-7;
 }
 section h3 {
   @apply text-xl font-bold;
@@ -59,7 +61,7 @@ section h3 {
 }
 
 .quickfacts p {
-  @apply mb-5 flex items-center;
+  @apply mb-5 flex items-center leading-tight;
 }
 .quickfacts p .icon {
   @apply min-w-5 min-h-5 mr-4;
@@ -69,7 +71,7 @@ section h3 {
   @apply block mb-10 clear-both;
 }
 .details h3 small {
-  @apply text-gray-300 ml-3;
+  @apply text-gray-300 block;
 }
 .details img {
   @apply float-right mt-3 ml-2 mb-2;
@@ -80,9 +82,12 @@ section h3 {
 }
 
 .experience ul {
-  @apply list-disc list-inside ml-5 mb-10;
+  @apply list-disc list-outside ml-5 mb-10;
 }
 
+.education {
+  page-break-after: always;
+}
 .education .details .description {
   @apply mt-0;
 }
