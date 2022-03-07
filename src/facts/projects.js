@@ -2,7 +2,7 @@ export default [
   {
     title: 'TAMM — Abu Dhabi Government Services',
     link: 'https://www.tamm.abudhabi/',
-    logo: `${import.meta.env.BASE_URL}img/logos/tamm.svg`,
+    logo: './img/logos/tamm.svg',
     startDate: '2018',
     endDate: '2021',
     technologies: [
@@ -23,7 +23,7 @@ export default [
   {
     title: 'WAVE Industry Media',
     link: 'https://raw.githubusercontent.com/markomarkovic/cv/main/src/public/img/screenshots/wave.png',
-    logo: `${import.meta.env.BASE_URL}img/logos/wave.jpeg`,
+    logo: './img/logos/wave.jpeg',
     startDate: '2012',
     endDate: '2013',
     technologies: [

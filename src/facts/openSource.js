@@ -2,11 +2,17 @@ export default [
   {
     title: 'This CV',
     link: 'https://github.com/markomarkovic/cv',
-    technologies: ['vue', 'vite', 'tailwind css', 'github pages', 'puppeteer'],
+    technologies: [
+      'vue',
+      'vite',
+      'tailwind css',
+      'unocss',
+      'github actions',
+      'github pages',
+      'puppeteer',
+    ],
     description: `Latest iteration of this CV, now built with Vue and Tailwind CSS, published to GitHub Pages, and generating a PDF version using Puppeteer.`,
-    aside: `<a href="${
-      import.meta.env.BASE_URL
-    }/Marko Markovic - CV - EN.pdf">Download PDF</a>`,
+    aside: `<a href="./Marko Markovic - CV - EN.pdf">Download PDF</a>`,
   },
   {
     title: 'sao-js-skeleton',
