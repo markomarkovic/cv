@@ -37,4 +37,12 @@ export default [
     description:
       'A startup focusing on video publishing for industry. I’ve created the complete platform for managing videos, including upload, transcoding, and hosting, video player customization, embedding, search etc. I was the CTO and only developer.',
   },
+  {
+    title: 'Love Letters to the Future',
+    link: 'https://youtu.be/li4rYH2Wmlw',
+    logo: './img/logos/love-letters-to-the-future_BIG.jpg',
+    startDate: '2009',
+    technologies: ['cakephp', 'mysql', 'flash', 'webby winner'],
+    description: `A global transmedia campaign aimed to raise awareness about dangers of climate change, a narrative game-like experience across the web, mobile and urban spaces. I've created the entire back-end CMS supporting all kinds of user-generated content (text, images, sound, and video) and the whole campaign management capabilities.`,
+  },
 ]

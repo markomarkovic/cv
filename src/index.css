@@ -92,6 +92,10 @@ section h3 {
   @apply mt-0;
 }
 
+.projects {
+  page-break-after: always;
+}
+
 .openSource .details .description {
   @apply mt-2;
 }
