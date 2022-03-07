@@ -80,7 +80,7 @@ const howLong = (from, to) => {
 
     <section class="experience">
       <div class="block">
-        <h2>Experience summary</h2>
+        <h2>Experience overview</h2>
         <ul>
           <li v-for="(item, i) in facts.experience.points" :key="i">
             {{ item }}
@@ -90,7 +90,7 @@ const howLong = (from, to) => {
     </section>
 
     <section class="experience">
-      <h2>Experience in more details</h2>
+      <h2>Experience in more detail</h2>
 
       <div
         v-for="(item, i) in facts.experience.details"
@@ -135,7 +135,7 @@ const howLong = (from, to) => {
     </section>
 
     <section class="projects">
-      <h2>Notable Projects</h2>
+      <h2>Notable projects</h2>
 
       <div v-for="(item, i) in facts.projects" :key="i" class="details">
         <img :src="item.logo" />
