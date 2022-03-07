@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  @apply mx-auto mt-20;
+  @apply mx-auto mt-20 px-5 print:px-0;
   max-width: 800px;
 }
 
