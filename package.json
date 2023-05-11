@@ -36,7 +36,7 @@
     "build:gh-pages": "vite build --base=/cv/",
     "build:html": "vite build",
     "build:pdf": "concurrently -k -s first 'http-server dist' 'sleep 5 && node src/generatePDF'",
-    "build:timestamp": "pnpx replace-in-files --string __LAST_UPDATE__ --replacement `date -I` dist/assets/index-*.js",
+    "build:timestamp": "pnpx replace-in-files-cli --string __LAST_UPDATE__ --replacement `date -I` dist/assets/index-*.js",
     "dev": "vite",
     "lint": "eslint . --ext=.js,.vue --fix",
     "prepare": "pnpx simple-git-hooks"
