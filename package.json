@@ -9,27 +9,27 @@
     "node": ">=14.15.1"
   },
   "dependencies": {
-    "vue": "3.2.31"
+    "vue": "3.3.1"
   },
   "devDependencies": {
-    "@iconify-json/tabler": "1.1.1",
-    "@unocss/preset-icons": "0.27.2",
-    "@unocss/reset": "0.27.2",
-    "@unocss/transformer-directives": "0.27.2",
-    "@vitejs/plugin-vue": "2.2.4",
-    "concurrently": "7.0.0",
-    "eslint": "8.10.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-vue": "8.5.0",
-    "http-server": "14.1.0",
-    "lint-staged": "12.3.5",
-    "prettier": "2.5.1",
-    "puppeteer": "13.4.1",
-    "replace-in-files-cli": "2.0.0",
-    "simple-git-hooks": "2.7.0",
-    "unocss": "0.27.2",
-    "vite": "2.8.6"
+    "@iconify-json/tabler": "1.1.74",
+    "@unocss/preset-icons": "0.51.12",
+    "@unocss/reset": "0.51.12",
+    "@unocss/transformer-directives": "0.51.12",
+    "@vitejs/plugin-vue": "4.2.2",
+    "concurrently": "8.0.1",
+    "eslint": "8.40.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-vue": "9.12.0",
+    "http-server": "14.1.1",
+    "lint-staged": "13.2.2",
+    "prettier": "2.8.8",
+    "puppeteer": "20.1.2",
+    "replace-in-files-cli": "2.1.0",
+    "simple-git-hooks": "2.8.1",
+    "unocss": "0.51.12",
+    "vite": "4.3.5"
   },
   "scripts": {
     "build": "pnpm run build:html && pnpm run build:timestamp && pnpm run build:pdf",
