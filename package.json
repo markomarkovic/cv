@@ -29,7 +29,7 @@
     "replace-in-files-cli": "2.1.0",
     "simple-git-hooks": "2.8.1",
     "unocss": "0.51.12",
-    "vite": "4.3.5"
+    "vite": "4.3.9"
   },
   "scripts": {
     "build": "pnpm run build:html && pnpm run build:timestamp && pnpm run build:pdf",
