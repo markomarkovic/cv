@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   vue:
     specifier: 3.3.1
@@ -56,7 +60,7 @@ devDependencies:
     version: 2.8.1
   unocss:
     specifier: 0.51.12
-    version: 0.51.12(postcss@8.4.23)(vite@4.3.5)
+    version: 0.51.12(postcss@8.4.31)(vite@4.3.5)
   vite:
     specifier: 4.3.5
     version: 4.3.5
@@ -520,6 +524,7 @@ packages:
 
   /@types/node@20.1.2:
     resolution: {integrity: sha512-CTO/wa8x+rZU626cL2BlbCDzydgnFNgc19h4YvizpTO88MFQxab8wqisxaofQJ/9bLGugRdWIuX/TbIs6VVF6g==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -593,7 +598,7 @@ packages:
       sirv: 2.0.3
     dev: true
 
-  /@unocss/postcss@0.51.12(postcss@8.4.23):
+  /@unocss/postcss@0.51.12(postcss@8.4.31):
     resolution: {integrity: sha512-d/EIwAOhnqcswZtq941GOJFwJj0rVyTQDqWa9YFH+9CkwmH92FcsBPEs8uEaQCyq7ZZEPgrg1UE2oa7Dn0fAxw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -604,7 +609,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.2.12
       magic-string: 0.30.0
-      postcss: 8.4.23
+      postcss: 8.4.31
     dev: true
 
   /@unocss/preset-attributify@0.51.12:
@@ -760,7 +765,7 @@ packages:
       '@vue/shared': 3.3.1
       estree-walker: 2.0.2
       magic-string: 0.30.0
-      postcss: 8.4.23
+      postcss: 8.4.31
       source-map-js: 1.0.2
 
   /@vue/compiler-ssr@3.3.1:
@@ -2435,8 +2440,8 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss@8.4.23:
-    resolution: {integrity: sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==}
+  /postcss@8.4.31:
+    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.6
@@ -2982,7 +2987,7 @@ packages:
       qs: 6.11.1
     dev: true
 
-  /unocss@0.51.12(postcss@8.4.23)(vite@4.3.5):
+  /unocss@0.51.12(postcss@8.4.31)(vite@4.3.5):
     resolution: {integrity: sha512-TjCrFnRq73iU/pxMSMgeWsCm9VPTcg41KEvjZWKJMglROJC+cQ99A7/tiOlamf1Y+TpJxv06K/hUZp+34j8Fmw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2995,7 +3000,7 @@ packages:
       '@unocss/cli': 0.51.12
       '@unocss/core': 0.51.12
       '@unocss/extractor-arbitrary-variants': 0.51.12
-      '@unocss/postcss': 0.51.12(postcss@8.4.23)
+      '@unocss/postcss': 0.51.12(postcss@8.4.31)
       '@unocss/preset-attributify': 0.51.12
       '@unocss/preset-icons': 0.51.12
       '@unocss/preset-mini': 0.51.12
@@ -3065,7 +3070,7 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.17.18
-      postcss: 8.4.23
+      postcss: 8.4.31
       rollup: 3.21.6
     optionalDependencies:
       fsevents: 2.3.2
