@@ -4,6 +4,7 @@ import path from 'path'
 import { presetIcons, presetUno } from 'unocss'
 import Unocss from 'unocss/vite'
 import { defineConfig } from 'vite'
+import { viteSingleFile } from 'vite-plugin-singlefile'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -30,6 +31,9 @@ export default defineConfig({
       ],
       transformers: [transformerDirective()],
     }),
+
+    // https://github.com/richardtallent/vite-plugin-singlefile
+    viteSingleFile({ removeViteModuleLoader: true }),
   ],
 
   build: {

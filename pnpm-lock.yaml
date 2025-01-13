@@ -66,6 +66,9 @@ importers:
       vite:
         specifier: 6.0.7
         version: 6.0.7(@types/node@20.1.2)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1)
+      vite-plugin-singlefile:
+        specifier: 2.1.0
+        version: 2.1.0(rollup@4.30.1)(vite@6.0.7(@types/node@20.1.2)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1))
 
 packages:
 
@@ -1988,6 +1991,13 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  vite-plugin-singlefile@2.1.0:
+    resolution: {integrity: sha512-7tJo+UgZABlKpY/nubth/wxJ4+pUGREPnEwNOknxwl2MM0zTvF14KTU4Ln1lc140gjLLV5mjDrvuoquU7OZqCg==}
+    engines: {node: '>18.0.0'}
+    peerDependencies:
+      rollup: ^4.28.1
+      vite: ^5.4.11 || ^6.0.0
 
   vite@6.0.7:
     resolution: {integrity: sha512-RDt8r/7qx9940f8FcOIAH9PTViRrghKaK2K1jY3RaAURrEUbm9Du1mJ72G+jlhtG3WwodnfzY8ORQZbBavZEAQ==}
@@ -4058,6 +4068,12 @@ snapshots:
   url-join@4.0.1: {}
 
   util-deprecate@1.0.2: {}
+
+  vite-plugin-singlefile@2.1.0(rollup@4.30.1)(vite@6.0.7(@types/node@20.1.2)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1)):
+    dependencies:
+      micromatch: 4.0.8
+      rollup: 4.30.1
+      vite: 6.0.7(@types/node@20.1.2)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1)
 
   vite@6.0.7(@types/node@20.1.2)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1):
     dependencies:
