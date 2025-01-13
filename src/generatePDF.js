@@ -1,6 +1,6 @@
-const fs = require('fs')
-const path = require('path')
-const puppeteer = require('puppeteer')
+import fs from 'fs'
+import path from 'path'
+import puppeteer from 'puppeteer'
 
 async function generatePDF() {
   const browser = await puppeteer.launch({ headless: 'new' })
@@ -13,12 +13,7 @@ async function generatePDF() {
   })
   await browser.close()
 
-  const saveFile = path.resolve(
-    __dirname,
-    '..',
-    'dist',
-    'Marko Markovic - CV - EN.pdf'
-  )
+  const saveFile = path.resolve('dist', 'Marko Markovic - CV - EN.pdf')
   fs.writeFileSync(saveFile, pdf)
 }
 

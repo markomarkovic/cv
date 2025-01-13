@@ -123,7 +123,7 @@ const howLong = (from, to) => {
         <h3>
           {{ item.title }}
         </h3>
-        <p class="where">{{ item.institution }}, {{ item.location }}</p>
+        <p class="whereAt">{{ item.institution }}, {{ item.location }}</p>
         <p class="date">
           <span class="from">{{ item.startDate }}</span> ⇨
           <span class="to">{{ item.endDate }}</span>
