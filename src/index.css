@@ -33,18 +33,23 @@ section {
 header {
   @apply mb-10;
 }
+
 header h1 {
   @apply border-b border-gray-400 pb-3 mb-5 flex flex-wrap-reverse justify-between;
 }
+
 header h1 .title {
   @apply text-4xl text-gray-400 font-bold order-last;
 }
+
 header h1 .name {
   @apply text-4xl font-bold;
 }
+
 header h1 .profession {
   @apply text-base font-bold flex-initial break-all;
 }
+
 header blockquote {
   @apply text-gray-500 print:leading-snug;
 }
@@ -52,6 +57,7 @@ header blockquote {
 section h2 {
   @apply text-2xl font-bold border-b border-gray-400 pb-2 mb-10 print:mb-7;
 }
+
 section h3 {
   @apply text-xl font-bold;
 }
@@ -63,6 +69,7 @@ section h3 {
 .quickfacts p {
   @apply mb-5 flex items-center leading-snug;
 }
+
 .quickfacts p .icon {
   @apply min-w-5 min-h-5 mr-4;
 }
@@ -70,13 +77,16 @@ section h3 {
 .details {
   @apply block mb-10 clear-both;
 }
+
 .details h3 small {
   @apply text-gray-300 block;
 }
+
 .details img {
   @apply float-right mt-3 ml-2 mb-2;
   width: 90px;
 }
+
 .details .description {
   @apply mt-5;
 }
@@ -88,6 +98,7 @@ section h3 {
 .education {
   page-break-after: always;
 }
+
 .education .details .description {
   @apply mt-0;
 }
@@ -104,18 +115,26 @@ section h3 {
   @page {
     margin: 2.3cm;
   }
+
   html,
   body {
     font-size: 12pt !important;
     line-height: 1.4 !important;
   }
+
   .container {
     padding: 0 !important;
     margin-top: 0 !important;
   }
+
+  .details {
+    @apply mb-5;
+  }
+
   .details img {
     width: 3cm;
   }
+
   .aside {
     display: none !important;
   }

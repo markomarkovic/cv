@@ -38,6 +38,6 @@ export default [
     title: 'serbian-qwertz-mac-keyboard-layout',
     link: 'https://github.com/markomarkovic/serbian-qwertz-mac-keyboard-layout',
     technologies: [],
-    description: `Serbian QWERTZ keyboard layout for Mac OS. Probably obsolete by now as it hasn't been updated for a decade now.`,
+    description: `Serbian QWERTZ keyboard layout for Mac OS.`,
   },
 ]

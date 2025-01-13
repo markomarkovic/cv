@@ -1,8 +1,8 @@
 export default {
   points: [
-    'More than 15 years of professional experience in web development and related fields.',
+    'Almost 20 years of professional experience in web development and related fields.',
     'Familiar with agile practices and leading cross-functional teams to deliver value.',
-    'Solid JavaScript knowledge, both back-end (strongly preferred) and front-end.',
+    'Solid JavaScript (prefer TypeScript) knowledge, both back-end (strongly preferred) and front-end.',
     'Relational, NoSQL, and Document based database experience.',
     'Used plain-old-http, REST, WebSockets, GraphQL, and gRPC to communicate with many diverse APIs.',
     'Has no problem learning new languages, libraries, frameworks, paradigms, etc.',
@@ -11,6 +11,24 @@ export default {
     'Works primarily in Linux, but can endure other platforms.',
   ],
   details: [
+    {
+      title: 'Developer',
+      employer: 'Binance',
+      location: 'Dubai, United Arab Emirates',
+      logo: './img/logos/binance.png',
+      startDate: 'May 2022',
+      endDate: 'Jan 2025',
+      technologies: [
+        'node.js',
+        'typescript',
+        'reactjs',
+        'vue',
+        'git',
+        'web3',
+        'blockchain',
+      ],
+      description: `Designed and implemented microservices to enhance various blockchain wallet functionalities using Node.js. Contributed to the development of a zero-knowledge wallet and a NFT marketplace solution in React. Built robust admin interfaces to support local Binance branches in different countries, leveraging Vue.js, and ensuring seamless management and operations. Developed a mobile and Telegram-based game using the Phaser framework and React.`,
+    },
     {
       title: 'Tech Lead / Engineering Manager',
       employer: 'appsintegra',

@@ -2,7 +2,7 @@
 export default [
   {
     icon: 'i-tabler-map-pin?bg',
-    text: 'Currently in <b>Dubai</b>, United Arab Emirates.',
+    text: 'Currently in <b>Abu Dhabi</b>, United Arab Emirates.',
     // text: 'Currently in <b>Belgrade</b>, Serbia.',
   },
   {
