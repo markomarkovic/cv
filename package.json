@@ -38,13 +38,13 @@
     "build:gh-pages": "vite build --base=/cv/",
     "build:html": "vite build",
     "build:pdf": "concurrently -k -s first 'http-server dist' 'sleep 5 && node src/generatePDF'",
-    "build:timestamp": "pnpx replace-in-files-cli --string __LAST_UPDATE__ --replacement `date -I` dist/index.html",
+    "build:timestamp": "pnpm dlx replace-in-files-cli --string __LAST_UPDATE__ --replacement `date -I` dist/index.html",
     "dev": "vite",
     "lint": "eslint . --ext=.js,.vue --fix",
-    "prepare": "pnpx simple-git-hooks"
+    "prepare": "pnpm dlx simple-git-hooks"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpx lint-staged"
+    "pre-commit": "pnpm dlx lint-staged"
   },
   "lint-staged": {
     "**/*.{js,vue}": [
