@@ -12,7 +12,7 @@ export default {
   ],
   details: [
     {
-      title: 'Developer',
+      title: 'Principal Developer',
       employer: 'Binance',
       location: 'Dubai, United Arab Emirates',
       logo: './img/logos/binance.png',
@@ -52,7 +52,7 @@ export default {
         'Leading a multi-cultural team of several developers and QAs, utilizing agile techniques and modern development practices, tools, and infrastructure to, in cooperation with other teams, deliver services linking government entities and end-users (TAMM Project, see below).',
     },
     {
-      title: 'Developer',
+      title: 'Tech Lead',
       employer: 'InertiaSystems ltd',
       location: 'remote',
       logo: './img/logos/inertiasystems-ltd.png',
@@ -68,7 +68,7 @@ export default {
         'git',
       ],
       description:
-        'Creating the backend to manage, and convert Autodesk files to an intermediate format that the next layer of 2D and 3D viewers can load and show online. Extracting and organizing metadata of those files. Integrating viewer code with the infrastructure. Creating realtime chat and changes backend.',
+        'Leading a small dedicated team to create the backend to manage, and convert Autodesk files to an intermediate format that the next layer of 2D and 3D viewers can load and show online. Extracting and organizing metadata of those files. Integrating viewer code with the infrastructure. Creating realtime chat and changes backend.',
     },
     {
       title: 'VP of Engineering',
