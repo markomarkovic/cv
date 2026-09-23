@@ -37,7 +37,7 @@ export default [
     title: 'Serbian QWERTZ and QWERTY keyboard layouts for macOS',
     link: 'https://github.com/markomarkovic/serbian-qwertz-mac-keyboard-layout',
     technologies: [],
-    description: `The keyboard layout for the Serbian language that's used in the Mac OS is different than the standard one which makes using macOS a PITA for the people like me that are used to the standard layout. Since Bosnian, Croatian and Slovene (according to Wikipedia article) are using the same layout, they too can benefit from this.`,
+    description: `The Serbian keyboard layout that ships with macOS differs from the standard one, which makes macOS frustrating for people like me who are used to the standard layout. Since Bosnian, Croatian, and Slovene use the same layout (according to Wikipedia), their speakers can benefit from this too.`,
   },
   {
     title: 'nena ilo lili',
