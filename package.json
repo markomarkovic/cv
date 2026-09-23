@@ -12,7 +12,7 @@
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.6",
     "lint-staged": "17.5.1",
-    "prettier": "3.9.6",
+    "prettier": "3.9.8",
     "puppeteer": "25.11.0",
     "replace-in-files-cli": "4.0.0",
     "simple-git-hooks": "2.14.0",
@@ -20,10 +20,11 @@
     "vite-plugin-singlefile": "2.3.3"
   },
   "scripts": {
-    "build": "pnpm run build:html && pnpm run build:timestamp && pnpm run build:pdf",
+    "build": "pnpm run build:html && pnpm run build:prettify && pnpm run build:timestamp && pnpm run build:pdf",
     "build:gh-pages": "vite build --base=/cv/",
     "build:html": "vite build",
     "build:pdf": "node src/generatePDF.js",
+    "build:prettify": "prettier --ignore-path= --embedded-language-formatting=off --write dist/index.html",
     "build:timestamp": "pnpm dlx replace-in-files-cli --string __LAST_UPDATE__ --replacement `date -I` dist/index.html",
     "dev": "vite",
     "lint": "eslint . --fix",

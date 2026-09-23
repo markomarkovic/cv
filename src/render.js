@@ -23,7 +23,7 @@ const escape = (str) =>
     .replaceAll('"', '&quot;')
 
 const dateFromShort = (str) => {
-  if (str === 'Present') {
+  if (!str || str === 'Present') {
     return new Date()
   }
   const [month, year] = str.split(' ')
@@ -47,7 +47,7 @@ const howLong = (from, to) => {
   if (months >= 1) {
     out.push(`${months} month${months > 1 ? 's' : ''}`)
   }
-  return out.join(', ')
+  return out.length > 0 ? `(${out.join(', ')})` : ''
 }
 
 const icon = (name) =>
@@ -108,8 +108,8 @@ export const render = (facts) => `
     </h3>
     <p class="date">
       <span class="from">${escape(item.startDate)}</span> ⇨
-      <span class="to">${escape(item.endDate)}</span>
-      (${howLong(item.startDate, item.endDate)})
+      <span class="to">${escape(item.endDate || 'Present')}</span>
+      ${howLong(item.startDate, item.endDate)}
     </p>
     ${tags(item.technologies)}
     <p class="description">${escape(item.description)}</p>
