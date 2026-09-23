@@ -1,14 +1,15 @@
 export default {
   points: [
-    'Almost 20 years of professional experience in web development and related fields.',
+    'More than 20 years of professional experience in software development.',
     'Familiar with agile practices and leading cross-functional teams to deliver value.',
     'Solid JavaScript (prefer TypeScript) knowledge, both back-end (strongly preferred) and front-end.',
     'Relational, NoSQL, and Document based database experience.',
-    'Used plain-old-http, REST, WebSockets, GraphQL, and gRPC to communicate with many diverse APIs.',
+    'Used plain-old-http, REST, WebSockets, GraphQL, and gRPC to connect diverse APIs.',
     'Has no problem learning new languages, libraries, frameworks, paradigms, etc.',
     'Developed on-line, off-line, real-time, specialized, generalized, and mixed applications.',
     'Wrote code to generate web sites, PDFs, images, graphs, and code.',
-    'Works primarily in Linux, but can endure other platforms.',
+    'Feels at home in Linux, but can endure other platforms.',
+    'Never lets agents get away with sloppy code.',
   ],
   details: [
     {
@@ -28,6 +29,7 @@ export default {
         'node.js',
         'typescript',
         'lsp',
+        'tdd',
       ],
       description: `Part of a small, focused team building vx0, an AI-native application security platform. Every scan emits taint paths, dataflow graphs, and code-context embeddings, forming a baseline that AI agents can learn the codebase from. Responsible for everything supporting the scan engine, and contributing to the engine itself when needed.`,
     },
@@ -46,6 +48,7 @@ export default {
         'reactjs',
         'gis',
         'llm',
+        'tdd',
       ],
       description: `Combined the architect role with hands-on development. Built several proofs of concept for various projects. Rewrote Tarjamah, an LLM-powered translation platform, replacing its entire backend. Established technical governance and developed internal tools to support the developers. Delivered the Capital Projects Delivery System for the Abu Dhabi Projects and Infrastructure Centre (ADPIC) from inception to completion.`,
     },

@@ -65,7 +65,8 @@ const dates = (startDate, endDate) =>
     endDate ? ` ⇨ <span class="to">${escape(endDate)}</span>` : ''
   }</p>`
 
-const logo = (src) => (src ? `<img src="${escape(src)}" alt="" />` : '')
+const logo = (src, alt) =>
+  src ? `<img src="${escape(src)}" alt="${escape(alt)}" />` : ''
 
 export const render = (facts) => `
 <header>
@@ -101,7 +102,7 @@ export const render = (facts) => `
     facts.experience.details,
     (item) => `
   <div class="details">
-    ${logo(item.logo)}
+    ${logo(item.logo, item.employer)}
     <h3>
       ${escape(item.title)} &mdash; ${escape(item.employer)}
       <small>${escape(item.location)}</small>
@@ -137,7 +138,7 @@ export const render = (facts) => `
     facts.projects,
     (item) => `
   <div class="details">
-    ${logo(item.logo)}
+    ${logo(item.logo, item.title)}
     <h3><a href="${escape(item.link)}">${escape(item.title)}</a></h3>
     ${dates(item.startDate, item.endDate)}
     ${tags(item.technologies)}
