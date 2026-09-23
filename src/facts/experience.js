@@ -1,15 +1,15 @@
 export default {
   points: [
     'More than 20 years of professional experience in software development.',
-    'Familiar with agile practices and leading cross-functional teams to deliver value.',
-    'Solid JavaScript (prefer TypeScript) knowledge, both back-end (strongly preferred) and front-end.',
-    'Relational, NoSQL, and Document based database experience.',
+    'Experienced with agile practices and leading cross-functional teams.',
+    'Strong TypeScript skills across full-stack, with a preference for back-end work.',
+    'Experience with relational, NoSQL, document, graph, and vector databases.',
     'Used plain-old-http, REST, WebSockets, GraphQL, and gRPC to connect diverse APIs.',
     'Has no problem learning new languages, libraries, frameworks, paradigms, etc.',
     'Developed online, offline, real-time, specialized, generalized, and mixed applications.',
     'Wrote code to generate web sites, PDFs, images, graphs, and code.',
     'Feels at home in Linux, but can endure other platforms.',
-    'Never lets agents get away with sloppy code.',
+    'Doesn’t let AI agents get away with sloppy code.',
   ],
   details: [
     {
