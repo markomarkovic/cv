@@ -1,12 +1,11 @@
-import basicFacts from './basic'
-import quickFacts from './quickFacts'
-import experience from './experience'
-import education from './education'
-import projects from './projects'
-import openSource from './openSource'
+import basicFacts from './basic.js'
+import quickFacts from './quickFacts.js'
+import experience from './experience.js'
+import education from './education.js'
+import projects from './projects.js'
+import openSource from './openSource.js'
 
 export default {
-  //
   basicFacts,
   quickFacts,
   experience,

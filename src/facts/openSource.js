@@ -3,15 +3,14 @@ export default [
     title: 'This CV',
     link: 'https://github.com/markomarkovic/cv',
     technologies: [
-      'vue',
       'vite',
-      'tailwind css',
-      'unocss',
+      'html',
+      'css',
       'github actions',
       'github pages',
       'puppeteer',
     ],
-    description: `Latest iteration of this CV, now built with Vue and Tailwind CSS, published to GitHub Pages, and generating a PDF version using Puppeteer.`,
+    description: `Latest iteration of this CV, rendered from plain data to a static HTML page with Vite, published to GitHub Pages, and generating a PDF version using Puppeteer.`,
     aside: `<a href="./Marko Markovic - CV - EN.pdf">Download PDF</a>`,
   },
   {

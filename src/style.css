@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  color-scheme: light;
+  --font-family: 'PT Sans', sans-serif;
+  --color-bg: #fff;
+  --color-text: #1a1a1a;
+  --color-muted: #d1d5db;
+  --color-subtle: #9ca3af;
+  --color-quote: #6b7280;
+  --color-border: #444;
+  --color-rule: #9ca3af;
+  --color-tag-bg: #e5e7eb;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-bg: #15171c;
+  --color-text: #e5e7eb;
+  --color-muted: #6b7280;
+  --color-subtle: #6b7280;
+  --color-quote: #9ca3af;
+  --color-border: #9ca3af;
+  --color-rule: #4b5563;
+  --color-tag-bg: #2a2e37;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+html {
+  scrollbar-color: var(--color-subtle) transparent;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 1.125rem;
+  font-variant-ligatures: common-ligatures;
+  line-height: 1.67;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+blockquote {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border);
+}
+
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--color-border);
+  padding-bottom: 2px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 5rem auto 0;
+  padding: 0 1.25rem;
+}
+
+.block,
+.details {
+  page-break-inside: avoid;
+}
+
+header,
+section {
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-rule);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+
+header h1 .title {
+  order: 1;
+  color: var(--color-subtle);
+}
+
+header h1 .profession {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+header blockquote {
+  color: var(--color-quote);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  border-bottom: 1px solid var(--color-rule);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+section h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.tags span {
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin: 0.5rem 0.25rem 0 0;
+  border-radius: 0.125rem;
+  background: var(--color-tag-bg);
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+.quickfacts p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  line-height: 1.375;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.icon[hidden] {
+  display: none;
+}
+
+.details {
+  margin-bottom: 2.5rem;
+  clear: both;
+}
+
+.details h3 small {
+  display: block;
+  color: var(--color-muted);
+}
+
+.details img {
+  float: right;
+  width: 90px;
+  margin: 0.75rem 0 0.5rem 0.5rem;
+}
+
+.details .description {
+  margin-top: 1.25rem;
+}
+
+.experience ul {
+  list-style: disc outside;
+  padding-left: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.education,
+.projects {
+  page-break-after: always;
+}
+
+.education .details .description {
+  margin-top: 0;
+}
+
+.openSource .details .description {
+  margin-top: 0.5rem;
+}
+
+footer .last-update {
+  padding-top: 1.25rem;
+  color: var(--color-muted);
+  text-align: right;
+  font-size: 0.875rem;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.theme-toggle .icon {
+  margin-right: 0;
+}
+
+@media print {
+  @page {
+    margin: 2.3cm;
+  }
+
+  :root,
+  :root[data-theme='dark'] {
+    color-scheme: light;
+    --color-bg: #fff;
+    --color-text: #1a1a1a;
+    --color-muted: #d1d5db;
+    --color-subtle: #9ca3af;
+    --color-quote: #6b7280;
+    --color-border: #444;
+    --color-rule: #9ca3af;
+    --color-tag-bg: #e5e7eb;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .container {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  header blockquote {
+    line-height: 1.375;
+  }
+
+  section h2 {
+    margin-bottom: 1.75rem;
+  }
+
+  .details {
+    margin-bottom: 1.25rem;
+  }
+
+  .details img {
+    width: 3cm;
+  }
+
+  .aside,
+  .theme-toggle {
+    display: none;
+  }
+}
