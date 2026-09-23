@@ -6,7 +6,7 @@ export default {
     'Relational, NoSQL, and Document based database experience.',
     'Used plain-old-http, REST, WebSockets, GraphQL, and gRPC to connect diverse APIs.',
     'Has no problem learning new languages, libraries, frameworks, paradigms, etc.',
-    'Developed on-line, off-line, real-time, specialized, generalized, and mixed applications.',
+    'Developed online, offline, real-time, specialized, generalized, and mixed applications.',
     'Wrote code to generate web sites, PDFs, images, graphs, and code.',
     'Feels at home in Linux, but can endure other platforms.',
     'Never lets agents get away with sloppy code.',
@@ -68,7 +68,7 @@ export default {
         'web3',
         'blockchain',
       ],
-      description: `Designed and implemented microservices to enhance various blockchain wallet functionalities using Node.js. Contributed to the development of a zero-knowledge wallet and a NFT marketplace solution in React. Built robust admin interfaces to support local Binance branches in different countries, leveraging Vue.js, and ensuring seamless management and operations. Developed a mobile and Telegram-based game using the Phaser framework and React.`,
+      description: `Designed and implemented microservices to enhance various blockchain wallet functionalities using Node.js. Contributed to the development of a zero-knowledge wallet and an NFT marketplace solution in React. Built robust admin interfaces to support local Binance branches in different countries, leveraging Vue.js, and ensuring seamless management and operations. Developed a mobile and Telegram-based game using the Phaser framework and React.`,
     },
     {
       title: 'Tech Lead / Engineering Manager',
@@ -94,8 +94,8 @@ export default {
     },
     {
       title: 'Tech Lead',
-      employer: 'InertiaSystems ltd',
-      location: 'remote',
+      employer: 'InertiaSystems Ltd',
+      location: 'Remote',
       logo: './img/logos/inertiasystems-ltd.png',
       startDate: 'Jun 2016',
       endDate: 'Feb 2017',
@@ -109,7 +109,7 @@ export default {
         'git',
       ],
       description:
-        'Leading a small dedicated team to create the backend to manage, and convert Autodesk files to an intermediate format that the next layer of 2D and 3D viewers can load and show online. Extracting and organizing metadata of those files. Integrating viewer code with the infrastructure. Creating realtime chat and changes backend.',
+        'Leading a small dedicated team to create the backend to manage, and convert Autodesk files to an intermediate format that the next layer of 2D and 3D viewers can load and show online. Extracting and organizing metadata of those files. Integrating viewer code with the infrastructure. Creating real-time chat and changes backend.',
     },
     {
       title: 'VP of Engineering',
@@ -125,7 +125,7 @@ export default {
     {
       title: 'External Developer',
       employer: 'designessentials',
-      location: 'remote',
+      location: 'Remote',
       logo: './img/logos/designessentials.png',
       startDate: 'May 2014',
       endDate: 'Jun 2015',
@@ -199,7 +199,7 @@ export default {
     {
       title: 'Programmer',
       employer: 'Cactimedia',
-      location: 'remote',
+      location: 'Remote',
       logo: './img/logos/cactimedia.png',
       startDate: 'Sep 2005',
       endDate: 'Feb 2006',

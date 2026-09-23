@@ -17,8 +17,8 @@ export default [
       'Halfway through, decided to switch to Computer Science in Belgrade.',
   },
   {
-    title: 'Studiumkolleg',
-    institution: 'Westfälische Wilhelms Universität',
+    title: 'Studienkolleg',
+    institution: 'Westfälische Wilhelms-Universität',
     location: 'Münster, Germany',
     startDate: '2000',
     endDate: '2001',

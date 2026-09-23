@@ -34,8 +34,7 @@ export default [
       'zencoder',
       'mediaelement.js',
     ],
-    description:
-      'A startup focusing on video publishing for industry. I’ve created the complete platform for managing videos, including upload, transcoding, and hosting, video player customization, embedding, search etc. I was the CTO and only developer.',
+    description: `A startup focusing on video publishing for industry. I've created the complete platform for managing videos, including upload, transcoding, and hosting, video player customization, embedding, search, etc. I was the CTO and only developer.`,
   },
   {
     title: 'Love Letters to the Future',

@@ -6,7 +6,7 @@ export default [
   },
   {
     icon: 'hourglass',
-    text: 'Born in 1980 &mdash; Experienced analog childhood and a digital adulthood. Posesses both Generation-X cynicism and Millenial optimism and drive.',
+    text: 'Born in 1980 &mdash; Experienced an analog childhood and a digital adulthood. Possesses both Generation-X cynicism and Millennial optimism and drive.',
   },
   {
     icon: 'language',
