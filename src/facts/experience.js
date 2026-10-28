@@ -31,7 +31,7 @@ export default {
         'lsp',
         'tdd',
       ],
-      description: `Part of a small, focused team building vx0, an AI-native application security platform. Every scan emits taint paths, dataflow graphs, and code-context embeddings, forming a baseline that AI agents can learn the codebase from. Responsible for everything supporting the scan engine, and contributing to the engine itself when needed.`,
+      description: `Part of a small, focused team building vx0, an AI-native application security platform. Every scan emits taint paths, dataflow graphs, and code-context embeddings, forming a baseline that AI agents can learn the codebase from. Responsible for everything supporting the scan engine, and contributing to the engine itself when needed. Also part of the internal security team, covering the full cycle from drafting security policies to implementing controls, monitoring, and vulnerability scanning.`,
     },
     {
       title: 'Software Architect',
@@ -50,7 +50,7 @@ export default {
         'llm',
         'tdd',
       ],
-      description: `Combined the architect role with hands-on development. Built several proofs of concept for various projects. Rewrote Tarjamah, an LLM-powered translation platform, replacing its entire backend. Established technical governance and developed internal tools to support the developers. Delivered the Capital Projects Delivery System for the Abu Dhabi Projects and Infrastructure Centre (ADPIC) from inception to completion.`,
+      description: `Combined the architect role with hands-on development. Built several proofs of concept for various projects. Rewrote Tarjamah, an LLM-powered translation platform, replacing its entire backend. Established technical governance and developed internal tools to support the developers. Served as the first point of contact for every finding raised by the security team, organizing its verification, remediation, and follow-up. Delivered the Capital Projects Delivery System for the Abu Dhabi Projects and Infrastructure Centre (ADPIC) from inception to completion.`,
     },
     {
       title: 'Principal Developer',
@@ -120,7 +120,7 @@ export default {
       endDate: 'Mar 2016',
       technologies: ['node.js', 'mongodb', 'express', 'angularjs', 'git'],
       description:
-        'Maintenance and improvements of the existing app, optimizing existing processes (including rewrites), implementing new functionality, and general server maintenance.',
+        'Maintenance and improvements of the existing app, optimizing existing processes (including rewrites), implementing new functionality, and general server maintenance. Responsible for security and risk management across the application and infrastructure: identifying and assessing risks, defining and implementing mitigations, and keeping systems and customer data secure.',
     },
     {
       title: 'External Developer',

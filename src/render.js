@@ -132,6 +132,19 @@ export const render = (facts) => `
   )}
 </section>
 
+<section class="certificates">
+  <h2>Certificates</h2>
+  ${list(
+    facts.certificates,
+    (item) => `
+  <div class="details">
+    <h3><a href="${escape(item.link)}">${escape(item.title)}</a></h3>
+    <p class="whereAt">${escape(item.issuer)}</p>
+    ${dates(item.date)}
+  </div>`
+  )}
+</section>
+
 <section class="projects">
   <h2>Notable projects</h2>
   ${list(
