@@ -20,7 +20,7 @@
       (function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();function e(){return matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`}function t(){return localStorage.getItem(`theme`)||e()}function n(e,t){t?e.setAttribute(`hidden`,``):e.removeAttribute(`hidden`)}function r(e){document.documentElement.dataset.theme=e,n(document.getElementById(`icon-sun`),e!==`dark`),n(document.getElementById(`icon-moon`),e===`dark`)}r(t()),document.getElementById(`theme-toggle`).addEventListener(`click`,()=>{let e=t()===`dark`?`light`:`dark`;localStorage.setItem(`theme`,e),r(e)}),matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,()=>{localStorage.getItem(`theme`)||r(e())});
     </script>
     <style rel="stylesheet" crossorigin>
-      @import "https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap";:root{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;--font-family:"PT Sans", sans-serif;--color-bg:#fff;--color-text:#1a1a1a;--color-muted:#d1d5db;--color-subtle:#9ca3af;--color-quote:#6b7280;--color-border:#444;--color-rule:#9ca3af;--color-tag-bg:#e5e7eb}:root[data-theme=dark]{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;--color-bg:#15171c;--color-text:#e5e7eb;--color-muted:#6b7280;--color-subtle:#6b7280;--color-quote:#9ca3af;--color-border:#9ca3af;--color-rule:#4b5563;--color-tag-bg:#2a2e37}*{box-sizing:border-box;font-family:var(--font-family)}html{scrollbar-color:var(--color-subtle) transparent}body{background:var(--color-bg);color:var(--color-text);font-variant-ligatures:common-ligatures;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0;font-size:1.125rem;line-height:1.67}h1,h2,h3,p,ul,blockquote{margin:0}a{color:inherit;border-bottom:1px solid var(--color-border);text-decoration:none}abbr{border-bottom:1px dotted var(--color-border);padding-bottom:2px;text-decoration:none}.container{max-width:800px;margin:5rem auto 0;padding:0 1.25rem}.block,.details{page-break-inside:avoid}header,section{margin-bottom:2.5rem}header h1{border-bottom:1px solid var(--color-rule);flex-wrap:wrap-reverse;justify-content:space-between;margin-bottom:1.25rem;padding-bottom:.75rem;font-size:2.25rem;line-height:1.1;display:flex}header h1 .title{color:var(--color-subtle);order:1}header h1 .profession{word-break:break-all;font-size:1.125rem;line-height:1.5}header blockquote{color:var(--color-quote)}section h2{border-bottom:1px solid var(--color-rule);margin-bottom:2.5rem;padding-bottom:.5rem;font-size:1.5rem;line-height:1.33}section h3{font-size:1.25rem;line-height:1.4}.tags span{background:var(--color-tag-bg);border-radius:.125rem;margin:.5rem .25rem 0 0;padding:0 .5rem;font-size:.875rem;line-height:1.43;display:inline-block}.quickfacts p{align-items:center;margin-bottom:1.25rem;line-height:1.375;display:flex}.icon{flex-shrink:0;width:1.25rem;height:1.25rem;margin-right:1rem}.icon[hidden]{display:none}.details{clear:both;margin-bottom:2.5rem}.details h3 small{color:var(--color-muted);display:block}.details img{float:right;width:90px;margin:.75rem 0 .5rem .5rem}.details .description{margin-top:1.25rem}.experience ul{margin-bottom:2.5rem;padding-left:1.25rem;list-style:outside}.education,.projects{page-break-after:always}.education .details .description{margin-top:0}.openSource .details .description{margin-top:.5rem}footer .last-update{color:var(--color-muted);text-align:right;padding-top:1.25rem;font-size:.875rem}.theme-toggle{width:2.5rem;height:2.5rem;color:var(--color-text);cursor:pointer;background:0 0;border:none;justify-content:center;align-items:center;padding:0;display:flex;position:fixed;top:1rem;right:1rem}.theme-toggle .icon{margin-right:0}@media print{@page{margin:2.3cm}:root,:root[data-theme=dark]{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;--color-bg:#fff;--color-text:#1a1a1a;--color-muted:#d1d5db;--color-subtle:#9ca3af;--color-quote:#6b7280;--color-border:#444;--color-rule:#9ca3af;--color-tag-bg:#e5e7eb}body{font-size:12pt;line-height:1.4}.container{margin-top:0;padding:0}header blockquote{line-height:1.375}section h2{margin-bottom:1.75rem}.details{margin-bottom:1.25rem}.details img{width:3cm}.aside,.theme-toggle{display:none}}
+      @import "https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap";:root{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;--font-family:"PT Sans", sans-serif;--color-bg:#fff;--color-text:#1a1a1a;--color-muted:#d1d5db;--color-subtle:#9ca3af;--color-quote:#6b7280;--color-border:#444;--color-rule:#9ca3af;--color-tag-bg:#e5e7eb}:root[data-theme=dark]{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;--color-bg:#15171c;--color-text:#e5e7eb;--color-muted:#6b7280;--color-subtle:#6b7280;--color-quote:#9ca3af;--color-border:#9ca3af;--color-rule:#4b5563;--color-tag-bg:#2a2e37}*{box-sizing:border-box;font-family:var(--font-family)}html{scrollbar-color:var(--color-subtle) transparent}body{background:var(--color-bg);color:var(--color-text);font-variant-ligatures:common-ligatures;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0;font-size:1.125rem;line-height:1.67}h1,h2,h3,p,ul,blockquote{margin:0}a{color:inherit;border-bottom:1px solid var(--color-border);text-decoration:none}abbr{border-bottom:1px dotted var(--color-border);padding-bottom:2px;text-decoration:none}.container{max-width:800px;margin:5rem auto 0;padding:0 1.25rem}.block,.details{page-break-inside:avoid}header,section{margin-bottom:2.5rem}header h1{border-bottom:1px solid var(--color-rule);flex-wrap:wrap-reverse;justify-content:space-between;margin-bottom:1.25rem;padding-bottom:.75rem;font-size:2.25rem;line-height:1.1;display:flex}header h1 .title{color:var(--color-subtle);order:1}header h1 .profession{word-break:break-all;font-size:1.125rem;line-height:1.5}header blockquote{color:var(--color-quote)}section h2{border-bottom:1px solid var(--color-rule);margin-bottom:2.5rem;padding-bottom:.5rem;font-size:1.5rem;line-height:1.33}section h3{font-size:1.25rem;line-height:1.4}.tags span{background:var(--color-tag-bg);border-radius:.125rem;margin:.5rem .25rem 0 0;padding:0 .5rem;font-size:.875rem;line-height:1.43;display:inline-block}.quickfacts p{align-items:center;margin-bottom:1.25rem;line-height:1.375;display:flex}.icon{flex-shrink:0;width:1.25rem;height:1.25rem;margin-right:1rem}.icon[hidden]{display:none}.details{clear:both;margin-bottom:2.5rem}.details h3 small{color:var(--color-muted);display:block}.details img{float:right;width:90px;margin:.75rem 0 .5rem .5rem}.details .description{margin-top:1.25rem}.experience ul{margin-bottom:2.5rem;padding-left:1.25rem;list-style:outside}.certificates,.projects{page-break-after:always}.education .details .description{margin-top:0}.openSource .details .description{margin-top:.5rem}footer .last-update{color:var(--color-muted);text-align:right;padding-top:1.25rem;font-size:.875rem}.theme-toggle{width:2.5rem;height:2.5rem;color:var(--color-text);cursor:pointer;background:0 0;border:none;justify-content:center;align-items:center;padding:0;display:flex;position:fixed;top:1rem;right:1rem}.theme-toggle .icon{margin-right:0}@media print{@page{margin:2.3cm}:root,:root[data-theme=dark]{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;--color-bg:#fff;--color-text:#1a1a1a;--color-muted:#d1d5db;--color-subtle:#9ca3af;--color-quote:#6b7280;--color-border:#444;--color-rule:#9ca3af;--color-tag-bg:#e5e7eb}body{font-size:12pt;line-height:1.4}.container{margin-top:0;padding:0}header blockquote{line-height:1.375}section h2{margin-bottom:1.75rem}.details{margin-bottom:1.25rem}.details img{width:3cm}.aside,.theme-toggle{display:none}}
       /*$vite$:1*/
     </style>
   </head>
@@ -206,6 +206,7 @@
           <p class="date">
             <span class="from">Sep 2026</span> ⇨
             <span class="to">Present</span>
+            (2 months)
           </p>
           <p class="tags">
             <span>golang</span>
@@ -224,7 +225,10 @@
             security platform. Every scan emits taint paths, dataflow graphs,
             and code-context embeddings, forming a baseline that AI agents can
             learn the codebase from. Responsible for everything supporting the
-            scan engine, and contributing to the engine itself when needed.
+            scan engine, and contributing to the engine itself when needed. Also
+            part of the internal security team, covering the full cycle from
+            drafting security policies to implementing controls, monitoring, and
+            vulnerability scanning.
           </p>
         </div>
 
@@ -254,9 +258,11 @@
             proofs of concept for various projects. Rewrote Tarjamah, an
             LLM-powered translation platform, replacing its entire backend.
             Established technical governance and developed internal tools to
-            support the developers. Delivered the Capital Projects Delivery
-            System for the Abu Dhabi Projects and Infrastructure Centre (ADPIC)
-            from inception to completion.
+            support the developers. Served as the first point of contact for
+            every finding raised by the security team, organizing its
+            verification, remediation, and follow-up. Delivered the Capital
+            Projects Delivery System for the Abu Dhabi Projects and
+            Infrastructure Centre (ADPIC) from inception to completion.
           </p>
         </div>
 
@@ -376,7 +382,11 @@
           <p class="description">
             Maintenance and improvements of the existing app, optimizing
             existing processes (including rewrites), implementing new
-            functionality, and general server maintenance.
+            functionality, and general server maintenance. Responsible for
+            security and risk management across the application and
+            infrastructure: identifying and assessing risks, defining and
+            implementing mitigations, and keeping systems and customer data
+            secure.
           </p>
         </div>
 
@@ -572,6 +582,40 @@
             <span class="from">2000</span> ⇨ <span class="to">2001</span>
           </p>
           <p class="description">Successfully finished.</p>
+        </div>
+      </section>
+
+      <section class="certificates">
+        <h2>Certificates</h2>
+
+        <div class="details">
+          <h3>
+            <a href="https://coursera.org/verify/professional-cert/ZEFCW0KQAHDA"
+              >Google Cybersecurity Professional Certificate</a
+            >
+          </h3>
+          <p class="whereAt">Google, Coursera</p>
+          <p class="date"><span class="from">Oct 2026</span></p>
+        </div>
+
+        <div class="details">
+          <h3>
+            <a href="https://coursera.org/verify/XRJEBM2CQGRE"
+              >Mastering ISO 27001 Controls: Implementation and Auditing</a
+            >
+          </h3>
+          <p class="whereAt">Packt, Coursera</p>
+          <p class="date"><span class="from">Oct 2026</span></p>
+        </div>
+
+        <div class="details">
+          <h3>
+            <a href="https://coursera.org/verify/JL9D3PSOORLX"
+              >Information Security Risk Management for ISO 27001/ISO 27002</a
+            >
+          </h3>
+          <p class="whereAt">Packt, Coursera</p>
+          <p class="date"><span class="from">Oct 2026</span></p>
         </div>
       </section>
 
@@ -786,7 +830,7 @@
       </section>
 
       <footer>
-        <div class="last-update">Last update: 2026-09-23</div>
+        <div class="last-update">Last update: 2026-10-28</div>
       </footer>
     </main>
 
